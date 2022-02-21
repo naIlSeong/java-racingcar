@@ -20,7 +20,6 @@ public class CarTest {
         Car car = new Car("jae");
         car.moveForward(true);
         assertThat(car.getPosition()).isEqualTo(1);
-
     }
 
     @DisplayName("자동차 전진 X")
@@ -29,6 +28,5 @@ public class CarTest {
         Car car = new Car("jae");
         car.moveForward(false);
         assertThat(car.getPosition()).isEqualTo(0);
-
     }
 }
